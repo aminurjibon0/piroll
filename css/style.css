@@ -1,0 +1,313 @@
+/*
+font-family: 'Nunito Sans', sans-serif;
+font-family: 'Montserrat', sans-serif;
+*/
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+	v2.0 | 20110126
+	License: none (public domain)
+*/
+
+/*RESET CSS BEGIN*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*RESET CSS END*/
+
+/*
+start    helper css
+********************************************************************************
+*/
+* {
+	box-sizing: border-box;
+}
+body {
+	font-family: 'Nunito Sans', sans-serif;
+}
+.container {
+	max-width: 1170px;
+	width: 100%;
+	margin: 0 auto;
+	padding: 0 10px;
+	overflow: hidden;
+/*	border: 1px solid lightblue;*/
+}
+h1 {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 500;
+	font-size: 38px;
+}
+.strong {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 500;
+}
+
+.block {
+	display: block;
+}
+/*
+end     helper css
+###############################################
+*/
+/*
+start    general css
+********************************************************************************
+*/
+header {
+	padding: 35px 0;
+}
+header .logo {
+	float: left;
+}
+header .navbar {
+	float: right;
+	margin-top: 5px;
+}
+header .navbar ul {
+	float: right;
+}
+header .navbar ul li {
+	display: inline-block;
+}
+header .navbar ul li a {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 500;
+	font-size: 12px;
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #191919;
+	margin-left: 30px;
+	transition: all .3s;
+}
+.navbar .active {
+	color: #10c9c3;
+}
+header .navbar ul li:first-child a {
+	margin-left: 0;
+}
+header .navbar ul li a:hover {
+	color: #10c9c3;
+}
+#designer {
+	padding: 100px 0;
+	text-align: center;
+	background: #F6F6F6;
+}
+#designer .container {
+	max-width: 520px;
+}
+#designer h1 {
+	margin-bottom: 30px;
+}
+.designer_p {
+	font-size: 18px;
+	line-height: 24px;
+}
+#designs .container {
+	max-width: 100%;
+	padding: 0;
+}
+.row {
+	overflow: hidden;
+}
+
+#designs .col_3_single {
+	width: 25%;
+	float: left;
+	margin-top: -3px;
+	position: relative;
+}
+#designs .col_3_single img {
+	width: 100%;
+}
+.overlay {
+	width: 0;
+	height: 100%;
+	background: rgba( 44, 210, 199, 0.74 );
+	position: absolute;
+	top: 0;
+	right: 100%;
+	bottom: 0;
+	overflow: hidden;
+	transition: all .4s;
+}
+.overlay p {
+	color: #fff;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+#designs .col_3_single:hover .overlay {
+	width: 100%;
+	right: 0;
+}
+footer {
+	font-size: 15px;
+	background: #141414;
+	color: #bcbcbc;
+	padding: 100px 0;
+}
+.footer_4_col {
+	width: 33.33%;
+	float: left;
+}
+.copyright .strong {
+	font-size: 18px;
+	margin-bottom: 30px;
+}
+.copyright .text .block {
+	margin-top: 4px;
+}
+.contact p {
+	line-height: 22px;
+}
+
+.footer_links {
+	overflow: hidden;
+}
+.links_3_col {
+	width: 33.33%;
+	float: left;
+}
+.footer_links a {
+	font-size: 15px;
+	text-decoration: none;
+	color: #bcbcbc;
+	display: block;
+	padding: 3px 0;
+	transition: all .2s;
+}
+.footer_links a:hover {
+	color: #10c9c3;
+	text-decoration: underline;
+}
+
+/*
+end     general css
+###############################################
+*/
+
+/*
+start    for laptop maximum with 992px
+********************************************************************************
+*/
+@media only screen and (max-width: 992px) {
+	#designs .col_3_single {
+		width: 33.33%;
+	}
+}
+
+/*
+end     laptop media query
+###############################################
+*/
+/*
+start    for tablet maximum with 768px
+********************************************************************************
+*/
+@media only screen and (max-width: 768px) {
+	#designs .col_3_single {
+		width: 50%;
+	}
+	.copyright {
+		width: 50%;
+	}
+	.contact {
+		width: 50%:
+	}
+	.footer_links {
+		width: 100%;
+		margin-top: 20px;
+	}
+}
+
+/*
+end     tablet media query
+###############################################
+*/
+
+/*
+start    for mobile maximum with 576px
+********************************************************************************
+*/
+@media only screen and (max-width: 576px) {
+	#designs .col_3_single {
+		width: 100%;
+	}
+	.overlay {
+		display: none;
+	}
+}
+
+/*
+end     tablet media query
+###############################################
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

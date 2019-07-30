@@ -1,0 +1,347 @@
+/*
+font-family: 'Nunito Sans', sans-serif;
+font-family: 'Montserrat', sans-serif;
+*/
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+	v2.0 | 20110126
+	License: none (public domain)
+*/
+
+/*RESET CSS BEGIN*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*RESET CSS END*/
+
+/*
+start    helper css
+********************************************************************************
+*/
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Nunito Sans', sans-serif;
+}
+
+.container {
+	max-width: 1170px;
+	width: 100%;
+	margin: 0 auto;
+	padding: 0 10px;
+	overflow: hidden;
+	/*	border: 1px solid lightblue;*/
+}
+
+h1 {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 500;
+	font-size: 38px;
+}
+
+.strong {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 500;
+}
+
+.block {
+	display: block;
+}
+/*
+end     helper css
+###############################################
+*/
+/*
+start    general css
+********************************************************************************
+*/
+header {
+	padding: 35px 0;
+}
+
+header .logo {
+	float: left;
+}
+
+header .navbar {
+	float: right;
+	margin-top: 5px;
+}
+
+header .navbar ul {
+	float: right;
+}
+
+header .navbar ul li {
+	display: inline-block;
+}
+
+header .navbar ul li a {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 500;
+	font-size: 12px;
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #191919;
+	margin-left: 30px;
+	transition: all .3s;
+}
+.navbar .active {
+	color: #10c9c3;
+}
+header .navbar ul li:first-child a {
+	margin-left: 0;
+}
+
+header .navbar ul li a:hover {
+	color: #10c9c3;
+}
+#contactForm {
+	background: #f5f5f5;
+	padding: 100px 0;
+}
+#contactForm .text {
+	width: 40%;
+	float: left;
+	padding-right: 100px;
+}
+#contactForm h1 {
+	margin-bottom: 30px;
+}
+#contactForm p {
+	line-height: 25px;
+}
+#contactForm .contact_info {
+	padding: 40px 0;
+}
+#contactForm .contact_info .strong {
+	font-weight: bold;
+}
+#contactForm .form {
+	width: 60%;
+	float: right;
+}
+.form .input_inline input {
+	font-size: 15px;
+	border-style: none;
+	padding: 20px;
+	color: #d6d6d6;
+	width: 48%;
+	border-radius: 5px;
+}
+.form .input_inline input:first-child {
+	margin-right: 3%;
+}
+.form input {
+	width: 100%;
+	padding: 20px;
+	border-style: none;
+	border-radius: 5px;
+	margin: 10px 0 15px;
+	transition: all .3s;
+}
+.form input:focus {
+	outline: 1px solid #10c9c3;
+}
+.form textarea {
+	width: 100%;
+	padding: 20px;
+	border-radius: 5px;
+	border-style: none;
+	display: block;
+}
+.form p {
+	padding: 40px 0;
+}
+.form .send_btn {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 500;
+	font-size: 12px;
+	padding: 25px 35px;
+	text-decoration: none;
+	background: #10c9c3;
+	color: #fff;
+	border: 1px solid transparent;
+	transition: all .3s;
+}
+.form .send_btn:hover {
+	border: 1px solid #10c9c3;
+	color:  #10c9c3;
+	background: transparent;
+}
+#map {
+	background: #f5f5f5;
+	padding-bottom: 100px;
+}
+#map img {
+	width: 100%;
+}
+footer {
+	font-size: 15px;
+	background: #141414;
+	color: #bcbcbc;
+	padding: 100px 0;
+}
+
+.footer_4_col {
+	width: 33.33%;
+	float: left;
+}
+
+.copyright .strong {
+	font-size: 18px;
+	margin-bottom: 30px;
+}
+
+.copyright .text .block {
+	margin-top: 4px;
+}
+
+.contact p {
+	line-height: 22px;
+}
+
+.footer_links {
+	overflow: hidden;
+}
+
+.links_3_col {
+	width: 33.33%;
+	float: left;
+}
+
+.footer_links a {
+	font-size: 15px;
+	text-decoration: none;
+	color: #bcbcbc;
+	display: block;
+	padding: 3px 0;
+	transition: all .2s;
+}
+
+.footer_links a:hover {
+	color: #10c9c3;
+	text-decoration: underline;
+}
+
+/*
+end     general css
+###############################################
+*/
+
+/*
+start    for laptop maximum with 992px
+********************************************************************************
+*/
+@media only screen and (max-width: 992px) {
+	#contactForm .text {
+		padding-right: 20px;
+	}
+}
+
+/*
+end     laptop media query
+###############################################
+*/
+/*
+start    for tablet maximum with 768px
+********************************************************************************
+*/
+@media only screen and (max-width: 768px) {
+	#contactForm .text {
+		width: 90%;
+		float: none;
+		margin: 0 auto;
+	}
+	#contactForm .form {
+		float: none;
+		width: 90%;
+		margin: 0 auto;
+	}
+	.copyright {
+		width: 50%;
+	}
+
+	.contact {
+		width: 50%:
+	}
+
+	.footer_links {
+		width: 100%;
+		margin-top: 20px;
+	}
+}
+
+/*
+end     tablet media query
+###############################################
+*/
+
+/*
+start    for mobile maximum with 576px
+********************************************************************************
+*/
+@media only screen and (max-width: 576px) {
+	.col_3_review {
+		width: 100%;
+		overflow: hidden;
+		float: none;
+	}
+}
+
+/*
+end     tablet media query
+###############################################
+*/
+
+
+
+
+
+
+
+
+
+
